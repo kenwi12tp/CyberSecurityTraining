@@ -87,26 +87,31 @@ def user_creator(conn, cursor, whats_missing):
             cursor.execute("""INSERT INTO users (username, Password_hash, salt) VALUES(?,?,?)""",(user,password_hash,salt))
             conn.commit()
             break
-def login(cursor):
-    username = input("Enter your username: ")
-    password = input("Enter your password: ")
-    data = cursor.execute("""SELECT Password_hash, salt FROM users WHERE username = ?""", (username,))
-    userdata = data.fetchone()
-    if userdata is None:
-        print("Invalid username or password")
-    else:
-        print("User found!")
-        salt = bytes.fromhex(userdata[1])
-        password_hash = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 600_000).hex()
-        if userdata[0] == password_hash:
-            print("login successful")
+def login(cursor,attempts):
+    while True:
+        if attempts == 3:
+            print("you have been blocked for too many wrong login attempts")
+            break
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+        data = cursor.execute("""SELECT Password_hash, salt FROM users WHERE username = ?""", (username,))
+        userdata = data.fetchone()
+        if userdata is None:
+            print("Invalid username or password")
+            attempts = attempts + 1
         else:
-            print("invalid username or password")
-
+            print("User found!")
+            salt = bytes.fromhex(userdata[1])
+            password_hash = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 600_000).hex()
+            if userdata[0] == password_hash:
+                print("login successful")
+            else:
+                print("invalid username or password")
+                attempts = attempts + 1
 while True:
     function_chooser = input("login press 1\ncreate user press 2\nquit press 3")
     if function_chooser == "1":
-        login(cursor)
+        login(cursor,attempts = 0)
     elif function_chooser == "2":
         user_creator(conn, cursor, whats_missing)
     elif function_chooser == "3":
