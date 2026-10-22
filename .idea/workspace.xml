@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="fixed a bug where each person wouldnt get random timestamps">
-      <change beforePath="$PROJECT_DIR$/Database_Setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecurityLoginAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecurityLoginAnalyser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security.db" beforeDir="false" />
+    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="couldnt make time work so i went back and added a way to see which user id has the best login success rate">
+      <change afterPath="$PROJECT_DIR$/PasswordManagement/PasswordValidator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PasswordManagement/databaseSetup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database_Setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseSecurityAnalyserBasic/Database_Setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecurityLoginAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseSecurityAnalyserBasic/SecurityLoginAnalyser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security.db" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseSecurityAnalyserBasic/security.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="54603c2f7b30cf899d62b8e71b11440781a7c140" />
+        <entry key="$PROJECT_DIR$" value="2439ac3d0b7284bc3d59fc41fdea00dfdb1dca84" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,20 +57,29 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Database_Setup.executor": "Run",
+    "Python.PasswordValidator.executor": "Run",
     "Python.SecurityLoginAnalyser.executor": "Run",
+    "Python.databaseSetup.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "54603c2f",
+    "git-widget-placeholder": "2439ac3d",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DatabaseSecurityAnalyserBasic" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,6 +96,15 @@
       <updated>1792667179619</updated>
       <workItem from="1792667180650" duration="2844000" />
     </task>
+    <task id="LOCAL-00001" summary="couldnt make time work so i went back and added a way to see which user id has the best login success rate">
+      <option name="closed" value="true" />
+      <created>1792682209553</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792682209553</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,8 +121,14 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="couldnt make time work so i went back and added a way to see which user id has the best login success rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="couldnt make time work so i went back and added a way to see which user id has the best login success rate" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage" NAME="SecurityLoginAnalyser Coverage Results" MODIFIED="1792681974872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$Database_Setup.coverage" NAME="Database_Setup Coverage Results" MODIFIED="1792681241740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$PasswordValidator.coverage" NAME="PasswordValidator Coverage Results" MODIFIED="1792686096480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$databaseSetup.coverage" NAME="databaseSetup Coverage Results" MODIFIED="1792685772112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
   </component>
 </project>
