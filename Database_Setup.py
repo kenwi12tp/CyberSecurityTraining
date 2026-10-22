@@ -7,14 +7,15 @@
 #1	1	192.168.1.10	FAILED
 #2	1	192.168.1.10	SUCCESS
 #3	2	10.0.0.5	FAILED
+import sqlite3
+import random as rnd
 
 login_events = [[1,"192.168.1.10", "FAILED"], [1,"192.168.1.10", "SUCCESS"],[2,"10.0.0.5", "FAILED"]]
 users = [[1,"Admin", "administrator"], [2,"Kewin", "user"]]
 statuses = ["SUCCESS","FAILED"]
 ips = ["192.168.1.10","10.0.0.5"]
 user_ids = [1,2]
-import sqlite3
-import random as rnd
+
 # Connect to the SQLite database (or create it if it doesn't exist)
 conn = sqlite3.connect("security.db")
 
