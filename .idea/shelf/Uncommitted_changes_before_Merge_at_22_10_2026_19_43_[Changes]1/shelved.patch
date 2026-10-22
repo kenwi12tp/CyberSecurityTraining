@@ -1,0 +1,64 @@
+Index: SecurityLoginAnalyser.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import sqlite3\nfrom datetime import datetime\n\n# Connect to the SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect(\"security.db\")\n\n# Create a cursor object\ncursor = conn.cursor()\n\n#finding total amount of events\ntotal_events = cursor.execute(\"SELECT COUNT(*) FROM login_events\")\ncount_events = total_events.fetchone()[0]\n\n#total amounts of failed logins\ntotal_failed = cursor.execute(\"SELECT COUNT(status) FROM login_events WHERE status = 'FAILED'\")\ncount_failed = total_failed.fetchone()[0]\n\n#total amount of successfull logins\ntotal_success = cursor.execute(\"SELECT COUNT(status) FROM login_events WHERE status = 'SUCCESS'\")\ncount_success = total_success.fetchone()[0]\n\n#finding the percantage of successfull login attempts\npercentage= count_success/count_events*100\n\n# cursor.execute(\"\"\"SELECT ip_address,SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END),SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END),\n#                   FROM login_events\n#                   GROUP BY ip_address\n#                   HAVING SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) >= 15 AND SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) >= 1\n#                   ORDER BY COUNT(*) DESC\"\"\")\n\ncursor.execute(\"\"\"SELECT ip_address,SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END),timestamp\n                  FROM login_events \n                  GROUP BY ip_address \n                  HAVING SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) >= 15 AND SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) >= 1 \n                  ORDER BY timestamp DESC\"\"\")\npotential_bruteforcer = cursor.fetchall()\nprint(potential_bruteforcer)\n#printing it\nprint(f\"========== SECURITY ANALYZER ==========\\n\"\n      f\"\\ntotal login attempts:{count_events}\"\n      f\"\\ntotal failed attempts:{count_failed}\"\n      f\"\\ntotal successfull attempts:{count_success}\"\n      f\"\\nprocentage successfull attempts:{round(percentage,2)}%\"\n      f\"\\n\\n========== SECURITY THREATS ==========\")\nfor bruteforcer in potential_bruteforcer:\n    print(f\"ip address:{bruteforcer[0]} amount of failed login attempts:{bruteforcer[1]} amount of successful login attempts:{bruteforcer[2]}\")\nfrom datetime import datetime\n\nfor event in potential_bruteforcer:\n    timestamp = datetime.strptime(event[2], \"%Y-%m-%d %H:%M:%S\")\n    print(timestamp)\nconn.close()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SecurityLoginAnalyser.py b/SecurityLoginAnalyser.py
+--- a/SecurityLoginAnalyser.py	(revision e9ad8369e5b4b8ee08390d179470d05e025a0707)
++++ b/SecurityLoginAnalyser.py	(date 1792691013739)
+@@ -1,52 +1,0 @@
+-import sqlite3
+-from datetime import datetime
+-
+-# Connect to the SQLite database (or create it if it doesn't exist)
+-conn = sqlite3.connect("security.db")
+-
+-# Create a cursor object
+-cursor = conn.cursor()
+-
+-#finding total amount of events
+-total_events = cursor.execute("SELECT COUNT(*) FROM login_events")
+-count_events = total_events.fetchone()[0]
+-
+-#total amounts of failed logins
+-total_failed = cursor.execute("SELECT COUNT(status) FROM login_events WHERE status = 'FAILED'")
+-count_failed = total_failed.fetchone()[0]
+-
+-#total amount of successfull logins
+-total_success = cursor.execute("SELECT COUNT(status) FROM login_events WHERE status = 'SUCCESS'")
+-count_success = total_success.fetchone()[0]
+-
+-#finding the percantage of successfull login attempts
+-percentage= count_success/count_events*100
+-
+-# cursor.execute("""SELECT ip_address,SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END),SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END),
+-#                   FROM login_events
+-#                   GROUP BY ip_address
+-#                   HAVING SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) >= 15 AND SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) >= 1
+-#                   ORDER BY COUNT(*) DESC""")
+-
+-cursor.execute("""SELECT ip_address,SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END),timestamp
+-                  FROM login_events 
+-                  GROUP BY ip_address 
+-                  HAVING SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) >= 15 AND SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) >= 1 
+-                  ORDER BY timestamp DESC""")
+-potential_bruteforcer = cursor.fetchall()
+-print(potential_bruteforcer)
+-#printing it
+-print(f"========== SECURITY ANALYZER ==========\n"
+-      f"\ntotal login attempts:{count_events}"
+-      f"\ntotal failed attempts:{count_failed}"
+-      f"\ntotal successfull attempts:{count_success}"
+-      f"\nprocentage successfull attempts:{round(percentage,2)}%"
+-      f"\n\n========== SECURITY THREATS ==========")
+-for bruteforcer in potential_bruteforcer:
+-    print(f"ip address:{bruteforcer[0]} amount of failed login attempts:{bruteforcer[1]} amount of successful login attempts:{bruteforcer[2]}")
+-from datetime import datetime
+-
+-for event in potential_bruteforcer:
+-    timestamp = datetime.strptime(event[2], "%Y-%m-%d %H:%M:%S")
+-    print(timestamp)
+-conn.close()
+\ No newline at end of file

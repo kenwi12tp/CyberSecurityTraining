@@ -1,0 +1,105 @@
+Index: Database_Setup.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#id\tusername\trole\n#1\tAdmin\tadministrator\n#2\tKewin\tuser\n\n#Tabel 2: login_events\n#id\tuser_id\tip_address\tstatus\n#1\t1\t192.168.1.10\tFAILED\n#2\t1\t192.168.1.10\tSUCCESS\n#3\t2\t10.0.0.5\tFAILED\nimport sqlite3\nimport random as rnd\nfrom datetime import datetime, timedelta\n\nstart = datetime(2026, 10, 15, 0, 0, 0)\n\n\nlogin_events = []\nusers = [[1,\"Admin\", \"administrator\"], [2,\"Kewin\", \"user\"]]\nstatuses = [\"SUCCESS\",\"FAILED\"]\nips = [\n    \"192.168.1.10\",\n    \"192.168.1.20\",\n    \"192.168.1.30\",\n    \"192.168.1.40\",\n    \"192.168.1.50\",\n    \"192.168.1.60\",\n    \"192.168.1.70\",\n    \"192.168.1.80\",\n    \"10.0.0.5\",\n    \"10.0.0.10\",\n    \"10.0.0.15\",\n    \"10.0.0.20\",\n    \"172.16.0.10\",\n    \"172.16.0.20\",\n    \"172.16.0.30\",\n    \"172.16.0.40\",\n    \"203.0.113.10\",\n    \"203.0.113.20\",\n    \"198.51.100.15\",\n    \"198.51.100.25\"\n]\nuser_ids = [1,2]\n\n# Connect to the SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect(\"security.db\")\n\n# Create a cursor object\ncursor = conn.cursor()\n\n#Create a table - decide on a structure\n\n#cursor.execute(\"\"\"DROP TABLE users\n# \"\"\")\n# cursor.execute(\"\"\"\n#  CREATE TABLE  users (\n#      id INTEGER PRIMARY KEY AUTOINCREMENT,\n#      user_id INTEGER,\n#      username TEXT,\n#      role TEXT\n#  )\n#  \"\"\")\n#\n# #Create a table - decide on a structure\n# cursor.execute(\"\"\"\n# CREATE TABLE login_events (\n#      id INTEGER PRIMARY KEY AUTOINCREMENT,\n#      user_id INTEGER,\n#      ip_address TEXT,\n#      status TEXT\n#  )\n#  \"\"\")\n\n#for altering tables\n#cursor.execute(\"\"\"ALTER TABLE login_events ADD COLUMN timestamp TEXT\"\"\")\n\nfor i in range(0, 501):\n    random_seconds = rnd.randint(0, 7 * 24 * 60 * 60)\n    random_time = start + timedelta(seconds=random_seconds)\n    login_events.append((rnd.choice(user_ids),rnd.choice(ips),rnd.choice(statuses),random_time.strftime(\"%Y-%m-%d %H:%M:%S\")))\n\n#creating a bruteforce hacker to the database\nfor i in range(0, 31):\n    if i < 30:\n        login_events.append((2,\"203.0.113.10\",\"FAILED\",(start + timedelta(seconds=i * 2)).strftime(\"%Y-%m-%d %H:%M:%S\")))\n    else:\n        login_events.append((2,\"203.0.113.10\",\"FAILED\",(start + timedelta(seconds=i * 2)).strftime(\"%Y-%m-%d %H:%M:%S\")))\n#inserting data via a list\ncursor.executemany(\"\"\"INSERT INTO login_events (user_id, ip_address, status, timestamp) VALUES (?, ?, ?, ?)\"\"\", login_events)\n#cursor.executemany(\"\"\"INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)\"\"\", users)\n\n#deleting data if i need to\n#cursor.execute(\"\"\"DELETE FROM login_events\"\"\")\n\n#saving the data in the database\nconn.commit()
+===================================================================
+diff --git a/Database_Setup.py b/Database_Setup.py
+--- a/Database_Setup.py	(revision e9ad8369e5b4b8ee08390d179470d05e025a0707)
++++ b/Database_Setup.py	(date 1792691013739)
+@@ -1,95 +1,0 @@
+-#id	username	role
+-#1	Admin	administrator
+-#2	Kewin	user
+-
+-#Tabel 2: login_events
+-#id	user_id	ip_address	status
+-#1	1	192.168.1.10	FAILED
+-#2	1	192.168.1.10	SUCCESS
+-#3	2	10.0.0.5	FAILED
+-import sqlite3
+-import random as rnd
+-from datetime import datetime, timedelta
+-
+-start = datetime(2026, 10, 15, 0, 0, 0)
+-
+-
+-login_events = []
+-users = [[1,"Admin", "administrator"], [2,"Kewin", "user"]]
+-statuses = ["SUCCESS","FAILED"]
+-ips = [
+-    "192.168.1.10",
+-    "192.168.1.20",
+-    "192.168.1.30",
+-    "192.168.1.40",
+-    "192.168.1.50",
+-    "192.168.1.60",
+-    "192.168.1.70",
+-    "192.168.1.80",
+-    "10.0.0.5",
+-    "10.0.0.10",
+-    "10.0.0.15",
+-    "10.0.0.20",
+-    "172.16.0.10",
+-    "172.16.0.20",
+-    "172.16.0.30",
+-    "172.16.0.40",
+-    "203.0.113.10",
+-    "203.0.113.20",
+-    "198.51.100.15",
+-    "198.51.100.25"
+-]
+-user_ids = [1,2]
+-
+-# Connect to the SQLite database (or create it if it doesn't exist)
+-conn = sqlite3.connect("security.db")
+-
+-# Create a cursor object
+-cursor = conn.cursor()
+-
+-#Create a table - decide on a structure
+-
+-#cursor.execute("""DROP TABLE users
+-# """)
+-# cursor.execute("""
+-#  CREATE TABLE  users (
+-#      id INTEGER PRIMARY KEY AUTOINCREMENT,
+-#      user_id INTEGER,
+-#      username TEXT,
+-#      role TEXT
+-#  )
+-#  """)
+-#
+-# #Create a table - decide on a structure
+-# cursor.execute("""
+-# CREATE TABLE login_events (
+-#      id INTEGER PRIMARY KEY AUTOINCREMENT,
+-#      user_id INTEGER,
+-#      ip_address TEXT,
+-#      status TEXT
+-#  )
+-#  """)
+-
+-#for altering tables
+-#cursor.execute("""ALTER TABLE login_events ADD COLUMN timestamp TEXT""")
+-
+-for i in range(0, 501):
+-    random_seconds = rnd.randint(0, 7 * 24 * 60 * 60)
+-    random_time = start + timedelta(seconds=random_seconds)
+-    login_events.append((rnd.choice(user_ids),rnd.choice(ips),rnd.choice(statuses),random_time.strftime("%Y-%m-%d %H:%M:%S")))
+-
+-#creating a bruteforce hacker to the database
+-for i in range(0, 31):
+-    if i < 30:
+-        login_events.append((2,"203.0.113.10","FAILED",(start + timedelta(seconds=i * 2)).strftime("%Y-%m-%d %H:%M:%S")))
+-    else:
+-        login_events.append((2,"203.0.113.10","FAILED",(start + timedelta(seconds=i * 2)).strftime("%Y-%m-%d %H:%M:%S")))
+-#inserting data via a list
+-cursor.executemany("""INSERT INTO login_events (user_id, ip_address, status, timestamp) VALUES (?, ?, ?, ?)""", login_events)
+-#cursor.executemany("""INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)""", users)
+-
+-#deleting data if i need to
+-#cursor.execute("""DELETE FROM login_events""")
+-
+-#saving the data in the database
+-conn.commit()
+\ No newline at end of file
