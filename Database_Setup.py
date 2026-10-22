@@ -18,25 +18,30 @@ conn = sqlite3.connect("security.db")
 cursor = conn.cursor()
 
 #Create a table - decide on a structure
-##DROP TABLE users
-#""")
-#cursor.execute("""
-#CREATE TABLE users (
-#    id INTEGER PRIMARY KEY AUTOINCREMENT,
-#    user_id INTEGER,
-#    username TEXT,
-#    role TEXT
-#)
-#""")
+cursor.execute("""DROP TABLE users
+""")
+cursor.execute("""
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    username TEXT,
+    role TEXT
+)
+""")
 
-#cursor.execute("""
-#CREATE TABLE login_events (
-#    id INTEGER PRIMARY KEY AUTOINCREMENT,
-#    user_id INTEGER,
-#    ip_address TEXT,
-#    status TEXT
-#)
-#""")
-#cursor.executemany("""INSERT INTO login_events (user_id, ip_address, status) VALUES (?, ?, ?)""", login_events)
-#cursor.executemany("""INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)""", users)
-#conn.commit()
+#Create a table - decide on a structure
+cursor.execute("""
+CREATE TABLE login_events (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    ip_address TEXT,
+    status TEXT
+)
+""")
+
+#inserting data via a list
+cursor.executemany("""INSERT INTO login_events (user_id, ip_address, status) VALUES (?, ?, ?)""", login_events)
+cursor.executemany("""INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)""", users)
+
+#saving the data in the database
+conn.commit()
