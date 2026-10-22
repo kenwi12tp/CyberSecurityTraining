@@ -10,7 +10,7 @@
 import sqlite3
 import random as rnd
 
-login_events = [[1,"192.168.1.10", "FAILED"], [1,"192.168.1.10", "SUCCESS"],[2,"10.0.0.5", "FAILED"]]
+login_events = []
 users = [[1,"Admin", "administrator"], [2,"Kewin", "user"]]
 statuses = ["SUCCESS","FAILED"]
 ips = [
@@ -44,43 +44,46 @@ conn = sqlite3.connect("security.db")
 cursor = conn.cursor()
 
 #Create a table - decide on a structure
-#
-# cursor.execute("""DROP TABLE users
-# """)
-# cursor.execute("""
-# CREATE TABLE users (
-#     id INTEGER PRIMARY KEY AUTOINCREMENT,
-#     user_id INTEGER,
-#     username TEXT,
-#     role TEXT
-# )
-# """)
 
-#Create a table - decide on a structure
+#cursor.execute("""DROP TABLE users
+#""")
+# cursor.execute("""
+#  CREATE TABLE  users (
+#      id INTEGER PRIMARY KEY AUTOINCREMENT,
+#      user_id INTEGER,
+#      username TEXT,
+#      role TEXT
+#  )
+#  """)
+#
+# #Create a table - decide on a structure
 # cursor.execute("""
 # CREATE TABLE login_events (
-#     id INTEGER PRIMARY KEY AUTOINCREMENT,
-#     user_id INTEGER,
-#     ip_address TEXT,
-#     status TEXT
-# )
-# """)
+#      id INTEGER PRIMARY KEY AUTOINCREMENT,
+#      user_id INTEGER,
+#      ip_address TEXT,
+#      status TEXT
+#  )
+#  """)
+
+#for altering tables
+#cursor.execute("""ALTER TABLE login_events ADD COLUMN timestamp TEXT""")
+
 for i in range(0, 501):
     login_events.append((rnd.choice(user_ids),rnd.choice(ips),rnd.choice(statuses)))
 
 #creating a bruteforce hacker to the database
 for i in range(0, 31):
     if i < 30:
-        login_events.append((2,"203.0.113.10","FAILED"))
+        login_events.append((2,"203.0.113.10","FAILED",))
     else:
-        login_events.append((2,"203.0.113.10","SUCCESS"))
-
+        login_events.append((2,"203.0.113.10","FAILED",))
 #inserting data via a list
-cursor.executemany("""INSERT INTO login_events (user_id, ip_address, status) VALUES (?, ?, ?)""", login_events)
-cursor.executemany("""INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)""", users)
+#cursor.executemany("""INSERT INTO login_events (user_id, ip_address, status) VALUES (?, ?, ?)""", login_events)
+#cursor.executemany("""INSERT INTO users (user_id, username, role) VALUES (?, ?, ?)""", users)
 
 #deleting data if i need to
-#cursor.execute("""DELETE FROM login_events""")
+#cursor.execute("""DELETE FROM users""")
 
 #saving the data in the database
 conn.commit()
