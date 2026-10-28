@@ -1,0 +1,15 @@
+homework.pdf
+family_photo.jpg
+invoice.exe
+notes.txt
+passwords.txt
+setup.exe
+holiday.png
+malware.bat
+report.docx
+backup.zip
+update.ps1
+readme.md
+bank_details.csv
+script.vbs
+presentation.pptx

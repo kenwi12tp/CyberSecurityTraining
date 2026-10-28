@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="shii" />
+    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="bliver kicket ud af login fukntionen efter 3 failed logins">
+      <change afterPath="$PROJECT_DIR$/SuspiciousFileScanner/files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2439ac3d0b7284bc3d59fc41fdea00dfdb1dca84" />
+        <entry key="$PROJECT_DIR$" value="password-management" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "password-management",
+    "git-widget-placeholder": "SuspiciousFileScanner",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,6 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1792667179619</updated>
       <workItem from="1792667180650" duration="2844000" />
+      <workItem from="1792693885369" duration="602000" />
+      <workItem from="1793199749977" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="couldnt make time work so i went back and added a way to see which user id has the best login success rate">
       <option name="closed" value="true" />
@@ -98,7 +104,31 @@
       <option name="project" value="LOCAL" />
       <updated>1792682209553</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shii">
+      <option name="closed" value="true" />
+      <created>1792693909169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792693909169</updated>
+    </task>
+    <task id="LOCAL-00003" summary="shii">
+      <option name="closed" value="true" />
+      <created>1792693911762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792693911762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bliver kicket ud af login fukntionen efter 3 failed logins">
+      <option name="closed" value="true" />
+      <created>1792694317728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1792694317728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,12 +147,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="couldnt make time work so i went back and added a way to see which user id has the best login success rate" />
-    <option name="LAST_COMMIT_MESSAGE" value="couldnt make time work so i went back and added a way to see which user id has the best login success rate" />
+    <MESSAGE value="shii" />
+    <MESSAGE value="bliver kicket ud af login fukntionen efter 3 failed logins" />
+    <option name="LAST_COMMIT_MESSAGE" value="bliver kicket ud af login fukntionen efter 3 failed logins" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage" NAME="SecurityLoginAnalyser Coverage Results" MODIFIED="1792681974872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$Database_Setup.coverage" NAME="Database_Setup Coverage Results" MODIFIED="1792681241740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CyberSecurityTraining$PasswordValidator.coverage" NAME="PasswordValidator Coverage Results" MODIFIED="1792690125051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$PasswordValidator.coverage" NAME="PasswordValidator Coverage Results" MODIFIED="1792694196690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$databaseSetup.coverage" NAME="databaseSetup Coverage Results" MODIFIED="1792689480463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
   </component>
 </project>
