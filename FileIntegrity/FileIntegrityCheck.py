@@ -16,4 +16,9 @@ with open ("fileHash.txt", "r+") as hashfile:
         if len(hashfile.readline())==0:
             hashfile.write(hash)
             hashfile.write("\n")
-    stored_hashes = hashfile.readlines()
+    hashfile.seek(0)
+    for file in files:
+        if hashfile.readlines() == hashes:
+            print(f"{file} has passed integrity check")
+        else:
+            print(f"{file} has failed integrity check")
