@@ -1,13 +1,19 @@
+import os
 import hashlib
-with open("fileIntegrity.txt", "r+") as integrityfile:
-    file_content = integrityfile.read()
-    file_encoded = file_content.encode()
-    fileHash = hashlib.sha256(file_encoded).hexdigest()
+hashes = []
+files = os.listdir("ProtectedFiles")
+print(files)
+
+for file in files:
+    with open(f"ProtectedFiles/{file}", "r+") as file:
+        file_content = file.read()
+        file_encoded = file_content.encode()
+        fileHash = hashlib.sha256(file_encoded).hexdigest()
+        hashes.append(fileHash)
+print(hashes)
 with open ("fileHash.txt", "r+") as hashfile:
-    if len(hashfile.readline())==0:
-        hashfile.write(fileHash)
-    hashfile.seek(0)
-    if fileHash == hashfile.read():
-        print("File integrity check passed")
-    else:
-        print("File integrity check failed")
+    for hash in hashes:
+        if len(hashfile.readline())==0:
+            hashfile.write(hash)
+            hashfile.write("\n")
+    stored_hashes = hashfile.readlines()
