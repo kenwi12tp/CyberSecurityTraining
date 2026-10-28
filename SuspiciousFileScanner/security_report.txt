@@ -1,0 +1,8 @@
+Suspicious Files
+----------------
+invoice.exe
+setup.exe
+malware.bat
+update.ps1
+script.vbs
+total suspicious files: 5
