@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="bliver kicket ud af login fukntionen efter 3 failed logins">
-      <change afterPath="$PROJECT_DIR$/SuspiciousFileScanner/files.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" afterDir="false" />
+    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
     "Python.PasswordValidator.executor": "Run",
     "Python.SecurityLoginAnalyser.executor": "Run",
     "Python.databaseSetup.executor": "Run",
+    "Python.scanner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -94,7 +94,7 @@
       <updated>1792667179619</updated>
       <workItem from="1792667180650" duration="2844000" />
       <workItem from="1792693885369" duration="602000" />
-      <workItem from="1793199749977" duration="458000" />
+      <workItem from="1793199749977" duration="4384000" />
     </task>
     <task id="LOCAL-00001" summary="couldnt make time work so i went back and added a way to see which user id has the best login success rate">
       <option name="closed" value="true" />
@@ -128,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792694317728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified">
+      <option name="closed" value="true" />
+      <created>1793200243261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793200243261</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,12 +157,14 @@
     <MESSAGE value="couldnt make time work so i went back and added a way to see which user id has the best login success rate" />
     <MESSAGE value="shii" />
     <MESSAGE value="bliver kicket ud af login fukntionen efter 3 failed logins" />
-    <option name="LAST_COMMIT_MESSAGE" value="bliver kicket ud af login fukntionen efter 3 failed logins" />
+    <MESSAGE value="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified" />
+    <option name="LAST_COMMIT_MESSAGE" value="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage" NAME="SecurityLoginAnalyser Coverage Results" MODIFIED="1792681974872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$Database_Setup.coverage" NAME="Database_Setup Coverage Results" MODIFIED="1792681241740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$PasswordValidator.coverage" NAME="PasswordValidator Coverage Results" MODIFIED="1792694196690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$scanner.coverage" NAME="scanner Coverage Results" MODIFIED="1793203826276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SuspiciousFileScanner" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$databaseSetup.coverage" NAME="databaseSetup Coverage Results" MODIFIED="1792689480463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
   </component>
 </project>
