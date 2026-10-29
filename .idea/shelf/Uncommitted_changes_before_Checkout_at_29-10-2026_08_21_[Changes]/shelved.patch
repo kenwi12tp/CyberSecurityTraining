@@ -1,0 +1,83 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"ALL\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"11e14894-0b53-4c49-ae12-10f23e29ff5c\" name=\"Changes\" comment=\"have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SuspiciousFileScanner/scanner.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SuspiciousFileScanner/scanner.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"password-management\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"KEEP\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;kenwi12tp&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/kenwi12tp/CyberSecurityTraining.git&quot;,\r\n    &quot;accountId&quot;: &quot;6301f3b1-e362-4ec1-bae3-b488384911bb&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3L2zvMn1mJnh0do9WcYZ9peusOR\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.Database_Setup.executor\": \"Run\",\r\n    \"Python.PasswordValidator.executor\": \"Run\",\r\n    \"Python.SecurityLoginAnalyser.executor\": \"Run\",\r\n    \"Python.databaseSetup.executor\": \"Run\",\r\n    \"Python.scanner.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\r\n    \"git-widget-placeholder\": \"SuspiciousFileScanner\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.jshint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.jshint\": \"\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"python.packages.toolwindow.project.migrated.to.right.top.v2\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/DatabaseSecurityAnalyserBasic\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"11e14894-0b53-4c49-ae12-10f23e29ff5c\" name=\"Changes\" comment=\"\" />\r\n      <created>1792667179619</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1792667179619</updated>\r\n      <workItem from=\"1792667180650\" duration=\"2844000\" />\r\n      <workItem from=\"1792693885369\" duration=\"602000\" />\r\n      <workItem from=\"1793199749977\" duration=\"4384000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"couldnt make time work so i went back and added a way to see which user id has the best login success rate\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1792682209553</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1792682209553</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"shii\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1792693909169</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1792693909169</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"shii\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1792693911762</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1792693911762</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"bliver kicket ud af login fukntionen efter 3 failed logins\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1792694317728</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1792694317728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1793200243261</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1793200243261</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"couldnt make time work so i went back and added a way to see which user id has the best login success rate\" />\r\n    <MESSAGE value=\"shii\" />\r\n    <MESSAGE value=\"bliver kicket ud af login fukntionen efter 3 failed logins\" />\r\n    <MESSAGE value=\"have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage\" NAME=\"SecurityLoginAnalyser Coverage Results\" MODIFIED=\"1792681974872\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/CyberSecurityTraining$Database_Setup.coverage\" NAME=\"Database_Setup Coverage Results\" MODIFIED=\"1792681241740\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/CyberSecurityTraining$PasswordValidator.coverage\" NAME=\"PasswordValidator Coverage Results\" MODIFIED=\"1792694196690\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/PasswordManagement\" />\r\n    <SUITE FILE_PATH=\"coverage/CyberSecurityTraining$scanner.coverage\" NAME=\"scanner Coverage Results\" MODIFIED=\"1793203826276\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/SuspiciousFileScanner\" />\r\n    <SUITE FILE_PATH=\"coverage/CyberSecurityTraining$databaseSetup.coverage\" NAME=\"databaseSetup Coverage Results\" MODIFIED=\"1792689480463\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/PasswordManagement\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6a2e51bc8a7f17fb9dfe93e7d1445d1fd6dc48c1)
++++ b/.idea/workspace.xml	(date 1793258403936)
+@@ -4,10 +4,7 @@
+     <option name="autoReloadType" value="ALL" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousFileScanner/scanner.py" afterDir="false" />
+-    </list>
++    <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="have made a new assignment that will make sure that i can operate in files for when we begin to learn that in school&#10;&#10;at this point only the suspicius file types have been identified" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -50,29 +47,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "Python.Database_Setup.executor": "Run",
+-    "Python.PasswordValidator.executor": "Run",
+-    "Python.SecurityLoginAnalyser.executor": "Run",
+-    "Python.databaseSetup.executor": "Run",
+-    "Python.scanner.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "git-widget-placeholder": "SuspiciousFileScanner",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.jshint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.jshint": "",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;Python.Database_Setup.executor&quot;: &quot;Run&quot;,
++    &quot;Python.PasswordValidator.executor&quot;: &quot;Run&quot;,
++    &quot;Python.SecurityLoginAnalyser.executor&quot;: &quot;Run&quot;,
++    &quot;Python.databaseSetup.executor&quot;: &quot;Run&quot;,
++    &quot;Python.scanner.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;SuspiciousFileScanner&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/DatabaseSecurityAnalyserBasic" />
+@@ -81,7 +78,7 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
++        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+       </set>
+     </attachedChunks>
+   </component>

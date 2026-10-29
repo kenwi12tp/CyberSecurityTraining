@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e14894-0b53-4c49-ae12-10f23e29ff5c" name="Changes" comment="i am now working on making it work for an undefined amount of files, and then after say what file passes the check, and which dont , currently it only creates a hash for the undefined amount of files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileIntegrity/FileIntegrityCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileIntegrity/FileIntegrityCheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileIntegrity/fileHash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileIntegrity/fileHash.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +34,71 @@
     &quot;assignee&quot;: &quot;kenwi12tp&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kenwi12tp/CyberSecurityTraining.git&quot;,
-    &quot;accountId&quot;: &quot;6301f3b1-e362-4ec1-bae3-b488384911bb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kenwi12tp/CyberSecurityTraining.git",
+    "accountId": "0a92f092-58f7-4248-b307-92c03d0d90f9"
   }
-}</component>
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000018088084" />
+      <entry key="S2" value="1.0178028849765544" />
+      <entry key="S5" value="1.3744399578769362" />
+      <entry key="S10" value="2.3678526765217986" />
+      <entry key="S30" value="6.69535090031129" />
+      <entry key="S60" value="12.466397396043211" />
+      <entry key="M2" value="21.506674178422347" />
+      <entry key="M5" value="34.724896790544825" />
+      <entry key="M10" value="42.11135453956097" />
+      <entry key="M15" value="45.08693620501367" />
+      <entry key="M30" value="48.37082089102858" />
+      <entry key="H1" value="50.13975661393985" />
+      <entry key="H2" value="51.05813646151461" />
+      <entry key="H4" value="51.526090614533715" />
+      <entry key="D1" value="51.920597913931886" />
+      <entry key="W1" value="51.988646580283316" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.700710637752329E-110" />
+      <entry key="S2" value="5.580856909476879E-28" />
+      <entry key="S5" value="1.255105853499725E-11" />
+      <entry key="S10" value="3.542747314584723E-6" />
+      <entry key="S30" value="0.015244507296579782" />
+      <entry key="S60" value="0.12346864904330886" />
+      <entry key="M2" value="0.35138105959671323" />
+      <entry key="M5" value="0.658129471504492" />
+      <entry key="M10" value="0.81125179291296" />
+      <entry key="M15" value="0.8698354696153606" />
+      <entry key="M30" value="0.9326497035947424" />
+      <entry key="H1" value="0.9657379062637762" />
+      <entry key="H2" value="0.9827196478466153" />
+      <entry key="H4" value="0.9913221715701795" />
+      <entry key="D1" value="0.9985484378639793" />
+      <entry key="W1" value="0.9997925048625307" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8585654364377537" />
+      <entry key="MS500" value="0.9699619119047868" />
+      <entry key="S2" value="1.0033425477072355" />
+      <entry key="S5" value="1.313268423446221" />
+      <entry key="S10" value="2.26390813628688" />
+      <entry key="S30" value="6.569773258861332" />
+      <entry key="S60" value="12.422547813214816" />
+      <entry key="M2" value="21.687332831124642" />
+      <entry key="M5" value="35.26425122273457" />
+      <entry key="M10" value="42.849563492092166" />
+      <entry key="M15" value="45.904466854748165" />
+      <entry key="M30" value="49.27534420193033" />
+      <entry key="H1" value="51.09090334942052" />
+      <entry key="H2" value="52.0334239607297" />
+      <entry key="H4" value="52.5136619826902" />
+      <entry key="D1" value="52.91851634366033" />
+      <entry key="W1" value="52.98834896394735" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
   &quot;fromUser&quot;: false
@@ -51,30 +108,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Database_Setup.executor": "Run",
-    "Python.FileIntegrityCheck.executor": "Run",
-    "Python.PasswordValidator.executor": "Run",
-    "Python.SecurityLoginAnalyser.executor": "Run",
-    "Python.databaseSetup.executor": "Run",
-    "Python.scanner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "FileIntegrity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Database_Setup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.FileIntegrityCheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PasswordValidator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SecurityLoginAnalyser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.databaseSetup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scanner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FileIntegrity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FileIntegrity/Protected files" />
@@ -208,11 +265,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="i am now working on making it work for an undefined amount of files, and then after say what file passes the check, and which dont , currently it only creates a hash for the undefined amount of files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage" NAME="SecurityLoginAnalyser Coverage Results" MODIFIED="1792681974872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CyberSecurityTraining$FileIntegrityCheck.coverage" NAME="FileIntegrityCheck Coverage Results" MODIFIED="1793210702493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FileIntegrity" />
-    <SUITE FILE_PATH="coverage/CyberSecurityTraining$Database_Setup.coverage" NAME="Database_Setup Coverage Results" MODIFIED="1792681241740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$PasswordValidator.coverage" NAME="PasswordValidator Coverage Results" MODIFIED="1792694196690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
-    <SUITE FILE_PATH="coverage/CyberSecurityTraining$scanner.coverage" NAME="scanner Coverage Results" MODIFIED="1793204430124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SuspiciousFileScanner" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$Database_Setup.coverage" NAME="Database_Setup Coverage Results" MODIFIED="1792681241740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CyberSecurityTraining$databaseSetup.coverage" NAME="databaseSetup Coverage Results" MODIFIED="1792689480463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PasswordManagement" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$SecurityLoginAnalyser.coverage" NAME="SecurityLoginAnalyser Coverage Results" MODIFIED="1792681974872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$scanner.coverage" NAME="scanner Coverage Results" MODIFIED="1793204430124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SuspiciousFileScanner" />
+    <SUITE FILE_PATH="coverage/CyberSecurityTraining$FileIntegrityCheck.coverage" NAME="FileIntegrityCheck Coverage Results" MODIFIED="1793259025095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FileIntegrity" />
   </component>
 </project>
